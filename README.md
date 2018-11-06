@@ -1,6 +1,14 @@
 # Consul DNS SRV
 
-envs
+## Install
+
+```
+pip install consul-dns-srv
+
+```
+
+Environment Variables
+
 
 ```
 NAMESERVER
@@ -16,6 +24,8 @@ NAMESERVER_PORT
 ## Usage
 
 ```
+from consul_dns_srv import DNS
 
+host = DNS.service_lookup("myservice")
 
 ```
